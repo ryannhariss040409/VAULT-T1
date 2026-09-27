@@ -1,0 +1,1 @@
+export default function Home(){return <main><div className="card"><div className="muted">POINTLEDGER</div><h1 className="hero">Customer points, managed securely.</h1><p className="muted">Role-based dashboards, immutable transaction records, audit trails, and near-real-time balance refresh.</p><a href="/login"><button>Secure sign in</button></a></div></main>}

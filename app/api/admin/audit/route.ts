@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {requireRole} from '@/lib/auth';import {db} from '@/lib/db';export async function GET(){if(!await requireRole('ADMIN'))return NextResponse.json({error:'Unauthorized'},{status:401});return NextResponse.json(await db.auditLog.findMany({take:100,orderBy:{createdAt:'desc'},include:{actor:{select:{username:true}}}}))}

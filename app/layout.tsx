@@ -1,0 +1,1 @@
+import './globals.css';export const metadata={title:'PointLedger',description:'Secure customer points management'};export default function Root({children}:{children:React.ReactNode}){return <html><body>{children}</body></html>}
